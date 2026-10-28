@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 
 defineProps({
-    products: String,
+    products: Array,
 })
 const prices = ref([1.00, 0.99, 1.20, 2.99])
 const quantities = ref ([1, 2, 4, 0])
