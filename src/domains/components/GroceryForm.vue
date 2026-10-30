@@ -1,7 +1,13 @@
 <script setup>
-// component used to add + edit groceries
+import { groceries } from '../store.js'
 
+defineProps({
+  groceries: {
+    type: Array,
+  }
+})
   
+
 </script>
 
 <template>

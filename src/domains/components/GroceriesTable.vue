@@ -1,8 +1,11 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { groceries } from '../store.js'
 
 defineProps({
-    products: Array,
+  groceries: {
+    type: Array,
+  }
 })
 const prices = ref([1.00, 0.99, 1.20, 2.99])
 const quantities = ref ([1, 2, 4, 0])
@@ -30,8 +33,8 @@ const subtotals =
     </thead>
 
     <tbody>
-      <tr v-for="(product, index) in products" :key="index">
-        <td>{{ product }}</td>
+      <tr v-for="(grocery, index) in groceries" :key="index">
+        <td>{{ grocery }}</td>
         <td>{{ prices[index].toFixed(2) }}</td>
         <td>
           <input type="number" min="0" v-model.number="quantities[index]" />

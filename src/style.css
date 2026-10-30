@@ -1,3 +1,6 @@
+/* the design was inspired by Deep Dish Dungeon */
+/* food icons https://deepdishdungeon.wiki.fextralife.com/Food */
+
 table {
     text-align: left;
     margin-left: auto;
@@ -7,3 +10,4 @@ table {
 h3 {
     text-align: center;
 }
+
